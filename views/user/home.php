@@ -30,9 +30,9 @@
       <div class="slider-container">
         <div class="slider-list" id="sliderList">
           <!-- 10 truyện hot -->
-          <div class="slider-item">
+        <div class="slider-item">
             <img src="<?php echo asset('assets/img/1.jpg'); ?>" alt="Truyện 1">
-            <div class="slider-title">Nhật ký trong tù</div>
+          <div class="slider-title">Nhật ký trong tù</div>
           </div>
           <div class="slider-item">
             <img src="<?php echo asset('assets/img/2.jpg'); ?>" alt="Truyện 2">
@@ -77,30 +77,103 @@
   </section>
 
   <main class="container main-content">
-    <section class="story-list-section">
-      <h2>Truyện Mới Cập Nhật</h2>
-      <div class="story-grid">
-        <!-- Lặp PHP để render truyện mới -->
-        <div class="story-card">
-          <img src="<?php echo asset('assets/img/2.jpg'); ?>" alt="Truyện 2">
-          <div class="story-info">
-            <h3 class="story-title">Tấm Cám</h3>
-            <div class="story-meta">Tác giả: <span>Việt Nam</span> | 20 chương</div>
+    <div class="main-flex">
+      <section class="left-list-section">
+        <h2>Truyện Chữ </h2>
+        <div class="left-grid">
+          <div class="left-item">
+            <img src="<?php echo asset('assets/img/1.jpg'); ?>" alt="Cánh đồng bất tận">
+            <div class="left-title">Cánh đồng bất tận</div>
+          </div>
+          <div class="left-item">
+            <img src="<?php echo asset('assets/img/2.jpg'); ?>" alt="Tấm cám">
+            <div class="left-title">Tấm cám</div>
+          </div>
+          <div class="left-item">
+            <img src="<?php echo asset('assets/img/3.jpg'); ?>" alt="Mắt biếc">
+            <div class="left-title">Mắt biếc</div>
+          </div>
+          <div class="left-item">
+            <img src="<?php echo asset('assets/img/1.jpg'); ?>" alt="Bánh chưng bánh dày">
+            <div class="left-title">Bánh chưng bánh dày</div>
+          </div>
+          <div class="left-item">
+            <img src="<?php echo asset('assets/img/2.jpg'); ?>" alt="Dế mèn phiêu lưu ký">
+            <div class="left-title">Dế mèn phiêu lưu ký</div>
+          </div>
+          <div class="left-item">
+            <img src="<?php echo asset('assets/img/3.jpg'); ?>" alt="Số đỏ">
+            <div class="left-title">Số đỏ</div>
+          </div>
+          <div class="left-item">
+            <img src="<?php echo asset('assets/img/1.jpg'); ?>" alt="Thánh Gióng">
+            <div class="left-title">Thánh Gióng</div>
+          </div>
+          <div class="left-item">
+            <img src="<?php echo asset('assets/img/2.jpg'); ?>" alt="Vợ nhặt">
+            <div class="left-title">Vợ nhặt</div>
           </div>
         </div>
-        <!-- ... -->
-      </div>
-    </section>
-    <aside class="ranking-section">
-      <h2>Bảng Xếp Hạng</h2>
-      <ol class="ranking-list">
-        <li>
-          <img src="<?php echo asset('assets/img/3.jpg'); ?>" alt="Truyện 3">
-          <span>Vợ nhặt</span>
-        </li>
-        <!-- ... -->
-      </ol>
-    </aside>
+      </section>
+      <aside class="ranking-section">
+        <h2>Bảng Xếp Hạng</h2>
+        <div class="ranking-tabs">
+          <button class="active">Top Tháng</button>
+          <button>Top Tuần</button>
+          <button>Top Ngày</button>
+        </div>
+        <ol class="ranking-list">
+          <li>
+            <span class="rank-num">01</span>
+            <img src="<?php echo asset('assets/img/1.jpg'); ?>" alt="Truyện A">
+            <div class="rank-info">
+              <div class="rank-title">Truyện A (Tháng)</div>
+              <div class="rank-meta">20 Chapters</div>
+            </div>
+          </li>
+          <li>
+            <span class="rank-num">02</span>
+            <img src="<?php echo asset('assets/img/2.jpg'); ?>" alt="Truyện B">
+            <div class="rank-info">
+              <div class="rank-title">Truyện B (Tháng)</div>
+              <div class="rank-meta">15 Chapters</div>
+            </div>
+          </li>
+          <li>
+            <span class="rank-num">03</span>
+            <img src="<?php echo asset('assets/img/3.jpg'); ?>" alt="Truyện A">
+            <div class="rank-info">
+              <div class="rank-title">Truyện A (Tháng)</div>
+              <div class="rank-meta">20 Chapters</div>
+            </div>
+          </li>
+          <li>
+            <span class="rank-num">04</span>
+            <img src="<?php echo asset('assets/img/1.jpg'); ?>" alt="Truyện B">
+            <div class="rank-info">
+              <div class="rank-title">Truyện B (Tháng)</div>
+              <div class="rank-meta">15 Chapters</div>
+            </div>
+          </li>
+          <li>
+            <span class="rank-num">05</span>
+            <img src="<?php echo asset('assets/img/2.jpg'); ?>" alt="Truyện A">
+            <div class="rank-info">
+              <div class="rank-title">Truyện A (Tháng)</div>
+              <div class="rank-meta">20 Chapters</div>
+            </div>
+          </li>
+          <li>
+            <span class="rank-num">06</span>
+            <img src="<?php echo asset('assets/img/3.jpg'); ?>" alt="Truyện A">
+            <div class="rank-info">
+              <div class="rank-title">Truyện A (Tháng)</div>
+              <div class="rank-meta">20 Chapters</div>
+            </div>
+          </li>
+        </ol>
+      </aside>
+    </div>
   </main>
 
   <footer class="main-footer">
